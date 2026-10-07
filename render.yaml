@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: evaluacion-sismica-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /ready
+    envVars:
+      - key: CORS_ORIGINS
+        sync: false

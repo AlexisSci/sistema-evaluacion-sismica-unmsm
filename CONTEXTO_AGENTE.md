@@ -2,7 +2,7 @@
 
 **Proyecto:** Sistema Inteligente de Evaluación de Impacto Sísmico y Detección de Enjambres en el Perú (1960–2026)  
 **Institución:** Universidad Nacional Mayor de San Marcos (UNMSM)  
-**Estado del Proyecto:** Fases 1, 2 y 3 **COMPLETADAS AL 100%**. Lista la transición a la **Fase 4 (Aplicación Web Interactiva en Streamlit e Informe Final)**.
+**Estado del Proyecto:** Hay datos y modelos generados; su validez científica sigue pendiente de auditoría. La arquitectura web vigente es React + TypeScript + Vite y FastAPI + Docker. El atlas, la radiografía, el laboratorio con similares, los cortes y los pasaportes PDF están implementados. La exportación validada conserva 25.764 eventos, corrige 9.231 fechas y cambia 646 etiquetas. XGBoost fue entrenado con el catálogo anterior: requiere reevaluación. Consulta docs/ATLAS.md; los conteos y afirmaciones metodológicas del resto de este documento describen el catálogo anterior. Consulta docs/ARQUITECTURA.md para ejecución y despliegue. Las referencias a Streamlit del resto de este documento corresponden al plan anterior.
 
 ---
 

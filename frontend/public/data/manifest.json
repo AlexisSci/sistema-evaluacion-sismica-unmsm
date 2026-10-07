@@ -1,0 +1,149 @@
+{
+  "version": "786f45f14b0e",
+  "file": "events-786f45f14b0e.json",
+  "count": 25764,
+  "minYear": 1960,
+  "maxYear": 2026,
+  "start": "1960-01-13T15:40:34Z",
+  "end": "2026-10-02T23:05:53Z",
+  "stdMagnitude": 0.4772210936971676,
+  "stdDepth": 65.24747698382886,
+  "sources": [
+    "IGP: datos-sismicos_Instrumental_1960-01-01_2026-10-03.xlsx",
+    "USGS: catalogo_usgs_peru.csv"
+  ],
+  "sourceHashes": {
+    "datos-sismicos_Instrumental_1960-01-01_2026-10-03.xlsx": "8ccfd1724dab55ee32a050554629e8613680616bd99754e3cd0361941d74e58b",
+    "catalogo_usgs_peru.csv": "2ee151be4060876aceb7c846577303f6b83a90a715b8362a280c2f23935eed58",
+    "modelo_clustering.pkl": "4ee40174e4e32ea3e0d8ff0d59a490b97df02631f276a541323d85e4b72b541a"
+  },
+  "matching": {
+    "seconds": 15,
+    "km": 75,
+    "unique": true,
+    "note": "Asociación automática conservadora; no validación manual evento por evento."
+  },
+  "counts": {
+    "intensity": 1689,
+    "usgs": 8002,
+    "shallow": 15717
+  },
+  "groups": {
+    "kmeans": [
+      {
+        "id": 0,
+        "count": 11326,
+        "meanDepth": 43.1,
+        "maxMagnitude": 8.4
+      },
+      {
+        "id": 1,
+        "count": 7756,
+        "meanDepth": 39.9,
+        "maxMagnitude": 8.0
+      },
+      {
+        "id": 2,
+        "count": 4076,
+        "meanDepth": 136.3,
+        "maxMagnitude": 8.0
+      },
+      {
+        "id": 3,
+        "count": 2606,
+        "meanDepth": 176.1,
+        "maxMagnitude": 7.8
+      }
+    ],
+    "dbscan": [
+      {
+        "id": -1,
+        "count": 11870,
+        "meanDepth": 32.8,
+        "maxMagnitude": 8.4
+      },
+      {
+        "id": 0,
+        "count": 170,
+        "meanDepth": 26.3,
+        "maxMagnitude": 6.0
+      },
+      {
+        "id": 1,
+        "count": 256,
+        "meanDepth": 34.5,
+        "maxMagnitude": 7.1
+      },
+      {
+        "id": 2,
+        "count": 218,
+        "meanDepth": 33.4,
+        "maxMagnitude": 8.0
+      },
+      {
+        "id": 3,
+        "count": 1350,
+        "meanDepth": 31.0,
+        "maxMagnitude": 7.7
+      },
+      {
+        "id": 4,
+        "count": 245,
+        "meanDepth": 40.1,
+        "maxMagnitude": 6.1
+      },
+      {
+        "id": 5,
+        "count": 283,
+        "meanDepth": 34.8,
+        "maxMagnitude": 7.0
+      },
+      {
+        "id": 6,
+        "count": 470,
+        "meanDepth": 43.8,
+        "maxMagnitude": 6.0
+      },
+      {
+        "id": 7,
+        "count": 151,
+        "meanDepth": 40.0,
+        "maxMagnitude": 6.7
+      },
+      {
+        "id": 8,
+        "count": 190,
+        "meanDepth": 34.8,
+        "maxMagnitude": 6.1
+      },
+      {
+        "id": 9,
+        "count": 426,
+        "meanDepth": 12.8,
+        "maxMagnitude": 6.2
+      },
+      {
+        "id": 10,
+        "count": 88,
+        "meanDepth": 27.9,
+        "maxMagnitude": 5.9
+      }
+    ]
+  },
+  "audit": {
+    "correctedDates": 9231,
+    "changedAssociations": 3251,
+    "changedTargets": 646,
+    "issues": 18,
+    "kmeansOriginalLabelsVerified": true
+  },
+  "model": {
+    "status": "experimental",
+    "trainingCompatible": false,
+    "note": "El XGBoost existente fue entrenado con el catálogo anterior. Las asociaciones y etiquetas revisadas requieren reentrenamiento y evaluación independiente."
+  },
+  "dbscan": {
+    "radio_km": 18.0,
+    "min_sismos": 80
+  }
+}
